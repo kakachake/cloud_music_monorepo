@@ -94,14 +94,20 @@ React Netease Music——一个基于 React、TypeScript 的高仿网易云播�
 
 ## 项目启动
 
-```
-npm install
+```bash
+
+pnpm install
 //启动网页版
-npm run dev
-//启动客户端版
-npm run electron-start
+pnpm run dev:project
+// 启动客户端版
+// 见project-package.json
+
 ```
 
 - 最后在浏览器中访问：`http://localhost:8080`
 
 ![Alt](https://repobeats.axiom.co/api/embed/2ecaaef4675072f1977375141dbd57148b602680.svg 'Repobeats analytics image')
+
+```
+
+```
