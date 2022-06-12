@@ -1,0 +1,14 @@
+.imgFade-exit {
+  transform: translate3d(0, -50%, 0);
+  opacity: 1;
+}
+
+.imgFade-exit-active {
+  opacity: 0;
+
+  transition: all 0.2s;
+}
+
+.imgFade-exit-done {
+  opacity: 0;
+}

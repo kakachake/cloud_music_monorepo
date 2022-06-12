@@ -1,0 +1,130 @@
+.musicDetail-enter {
+  width: 100%;
+  height: calc(100% - var(--musicBarHeight));
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  opacity: 0;
+  transform: translateY(100%);
+  z-index: 999;
+}
+.musicDetail-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s;
+}
+.musicDetail-exit {
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 999;
+}
+.musicDetail-exit-active {
+  width: 100%;
+  height: calc(100% - var(--musicBarHeight));
+  position: fixed;
+  top: 0;
+  transform: translateY(100%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.musicDetail-enter-done {
+  width: 100%;
+  height: calc(100% - var(--musicBarHeight));
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  opacity: 1;
+  z-index: 999;
+}
+
+/*入场动画开始*/
+.fade-enter {
+  opacity: 0;
+}
+
+/*入场动画过程*/
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+/*入场动画结束*/
+.fade-enter-done {
+  opacity: 1;
+}
+
+/*离场动画开始*/
+.fade-exit {
+  opacity: 1;
+}
+
+/*离场动画过程*/
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+/*离场动画结束*/
+.fade-exit-done {
+  opacity: 0;
+}
+
+/*页面第一次加载时的开始状态*/
+.fade-appear {
+  opacity: 0;
+}
+
+/*页面第一次加载时的动画过程*/
+.fade-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+/* ==================bounce-fade======================= */
+
+/*入场动画开始*/
+.bounce-fade-enter {
+  transform: scale(0.8) translate(-50%, -50%) !important;
+  opacity: 0;
+}
+
+/*入场动画过程*/
+.bounce-fade-enter-active {
+  opacity: 1;
+}
+
+/*入场动画结束*/
+.bounce-fade-enter-done {
+  transform: scale(1) translate(-50%, -50%) !important;
+  opacity: 1;
+}
+
+/*离场动画开始*/
+.bounce-fade-exit {
+  transform: scale(1) translate(-50%, -50%);
+  opacity: 1;
+}
+
+/*离场动画过程*/
+.bounce-fade-exit-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+/*离场动画结束*/
+.bounce-fade-exit-done {
+  opacity: 0;
+}
+
+/*页面第一次加载时的开始状态*/
+.bounce-fade-appear {
+  transform: scale(0) translate(-50%, -50%);
+  opacity: 0;
+}
+
+/*页面第一次加载时的动画过程*/
+.bounce-fade-appear-active {
+  transform: scale(1) translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}

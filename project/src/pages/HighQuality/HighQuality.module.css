@@ -1,0 +1,7 @@
+.listWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.listWrap > div {
+  margin: 10px;
+}

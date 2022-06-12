@@ -1,0 +1,45 @@
+.headerTabs {
+  line-height: 34px;
+}
+
+.tabItem {
+  display: flex;
+}
+
+.tabItemTitle {
+  flex: 0 0 auto;
+  font-size: 12px;
+  color: #373737;
+}
+
+.tabBarItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 12px !important;
+  cursor: pointer;
+  padding: 0px 10px;
+  color: #373737;
+  margin: 0 10px;
+}
+
+.tabBarItemActive {
+  font-size: 12px;
+
+  background-color: #fdf5f5;
+  color: #ec4141;
+  height: 20px;
+}
+.tabBarItemActive:after {
+  content: none !important;
+}
+
+.artistItem {
+  margin-top: 10px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+}

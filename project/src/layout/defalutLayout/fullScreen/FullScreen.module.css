@@ -1,0 +1,69 @@
+.fullScreen {
+  margin-top: var(--headerHeight);
+  height: calc(100vh - var(--headerHeight) - var(--musicBarHeight));
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lyric {
+  width: 80%;
+  z-index: 2;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.lyric .lrc {
+  width: 100%;
+}
+
+.cover {
+  width: 80%;
+  z-index: 2;
+}
+
+.songName {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.569);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.changeMode {
+  position: absolute;
+  right: 10px;
+  color: rgba(255, 255, 255, 0.502);
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.119);
+  padding: 10px;
+  z-index: 99;
+  border-radius: 10px;
+}
+
+.modeItem {
+  flex: 1 1 auto;
+  line-height: 30px;
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.modeItem:hover,
+.modeActive {
+  color: #fff;
+}
+
+.modeActive {
+  font-size: 16px;
+  font-weight: bold;
+}

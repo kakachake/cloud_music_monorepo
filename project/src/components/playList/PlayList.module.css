@@ -1,0 +1,58 @@
+.playListWrap {
+  width: 450px;
+  background-color: #fff;
+  height: 100%;
+  box-shadow: -0.5px 0px 0.5px rgba(0, 0, 0, 0.017), 1.3px 0px 1.1px rgba(0, 0, 0, 0.024),
+    -2.4px 0px 2.1px rgba(0, 0, 0, 0.03), 4.2px 0px 3.8px rgba(0, 0, 0, 0.036),
+    -7.9px 0px 7.1px rgba(0, 0, 0, 0.043), 19px 0px 17px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.playListHeader {
+  box-sizing: border-box;
+}
+
+.playListTitle {
+  height: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.playListInfo {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+
+  box-sizing: border-box;
+}
+
+.playListInfo .playListCount {
+  font-size: 14px;
+  line-height: 30px;
+  color: #cfcfcf;
+  user-select: none;
+}
+
+.playListInfo .playListHandles {
+  font-size: 16px;
+  line-height: 30px;
+  color: #507daf;
+  cursor: pointer;
+}
+
+.playListInfo .playListHandles:hover {
+  color: #0b58b0;
+}
+
+.playList {
+  height: calc(100% - 90px);
+  overflow-y: auto;
+  border-top: 1px solid #cfcfcf;
+}
+
+.active {
+  color: #ec4141;
+}

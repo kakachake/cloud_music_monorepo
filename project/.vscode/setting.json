@@ -1,0 +1,18 @@
+{
+  "eslint.autoFixOnSave": true,
+  "prettier.eslintIntegration": true,
+  "eslint.enable": true,
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.validate": ["javascript", "javascriptreact", "html", "typescript", "typescriptreact"], //确定校验准则
+  "files.associations": {
+    "*.jsx": "javascriptreact"
+  },
+
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

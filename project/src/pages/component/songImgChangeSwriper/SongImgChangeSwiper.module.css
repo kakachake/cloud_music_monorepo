@@ -1,0 +1,53 @@
+.imgWrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  perspective: 400px;
+  /* overflow: hidden; */
+}
+
+.imgWrap img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0.6px 0.9px 0.8px rgba(0, 0, 0, 0.022), 1.4px 2.1px 1.9px rgba(0, 0, 0, 0.032),
+    2.6px 4px 3.6px rgba(0, 0, 0, 0.04), 4.7px 7.1px 6.5px rgba(0, 0, 0, 0.048),
+    8.8px 13.4px 12.1px rgba(0, 0, 0, 0.058), 21px 32px 29px rgba(0, 0, 0, 0.08);
+}
+
+.curImg {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 85%;
+  height: 85%;
+  transition: all 0.5s;
+  z-index: 10;
+  /* overflow: hidden; */
+
+  border-radius: 5px;
+}
+
+.prevImg {
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  transform: translate3d(-50%, -50%, -90px);
+  width: 90%;
+  height: 90%;
+  transition: all 0.5s;
+  z-index: 10;
+}
+
+.nextImg {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 85%;
+  height: 85%;
+  transition: all 0.5s;
+  z-index: 10;
+  opacity: 0;
+}

@@ -1,0 +1,23 @@
+.showTip-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.showTip-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s;
+}
+.showTip-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.showTip-exit-active {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s;
+}
+
+.showTip-enter-done {
+  opacity: 1;
+  transform: translateY(0);
+}

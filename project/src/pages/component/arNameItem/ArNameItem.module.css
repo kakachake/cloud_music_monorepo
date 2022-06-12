@@ -1,0 +1,12 @@
+.arNameWrap {
+  display: inline-block;
+}
+
+.nameItem {
+  color: var(--linkColor);
+  cursor: pointer;
+}
+
+.nameItem:hover {
+  color: var(--linkHoverColor);
+}

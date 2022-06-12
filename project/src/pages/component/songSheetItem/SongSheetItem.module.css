@@ -1,0 +1,70 @@
+.songSheetItem {
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.contentWrap {
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+  position: relative;
+  font-size: 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.contentWrap img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.contentWrap .content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 16px;
+}
+
+.content .playCount {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  text-shadow: 0 0 2px #000;
+}
+
+.content .playIcon {
+  margin-right: 5px;
+}
+
+.songSheetName {
+  line-height: 24px;
+  height: 48px;
+  padding: 5px;
+}
+
+.hoverWrap {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(116, 116, 116, 0.392);
+  position: relative;
+  opacity: 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.hoverWrap .playIcon {
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  font-size: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contentWrap:hover .hoverWrap {
+  opacity: 1;
+}

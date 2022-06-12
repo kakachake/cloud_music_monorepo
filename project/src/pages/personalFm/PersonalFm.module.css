@@ -1,0 +1,85 @@
+.personFmWrap {
+  padding: 20px;
+}
+
+.songArea {
+  width: 800px;
+  margin: 0 auto;
+  height: 500px;
+
+  display: flex;
+}
+.songAreaLeft {
+  flex: 0 0 55%;
+
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.songImgChangeSwriper {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.songImgHandle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+  height: 100px;
+
+  margin-left: 50px;
+}
+
+.handleItem {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 10px 0;
+}
+
+.handleItem:hover {
+  background-color: #f5f5f5;
+}
+
+.songAreaRight {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.songAreaRightHeader {
+  margin-bottom: 10px;
+}
+.songName {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.songOther {
+  line-height: 24px;
+  padding: 0 10px 0 0;
+  display: flex;
+  font-size: 14px;
+  color: #999;
+  justify-content: space-between;
+}
+
+.lrc {
+  flex: 1 1 auto;
+}

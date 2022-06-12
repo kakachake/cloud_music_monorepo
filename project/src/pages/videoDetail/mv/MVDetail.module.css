@@ -1,0 +1,79 @@
+.detailWrap {
+  max-width: 2540px;
+  min-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  box-sizing: content-box;
+}
+
+.mainContent {
+  width: 721px;
+}
+
+.contentHeader {
+  margin: 10px 0 10px 0;
+}
+
+.sideBar {
+  flex: 0 0 350px;
+  background-color: #f5f5f5;
+  margin-left: 30px;
+}
+
+.mvTitle {
+  font-size: 26px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 40px;
+}
+
+.desc {
+  text-indent: 2em;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.mvInfo {
+  line-height: 2;
+  font-size: 14px;
+  color: #666;
+}
+
+.descWrap {
+  margin-top: 10px;
+  max-height: 84px;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+.descMore {
+  max-height: max-content;
+  height: auto;
+}
+
+.artists {
+  margin: 10px 0;
+}
+
+.artist {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  line-height: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.artist img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.commentWrap {
+  margin-top: 20px;
+}

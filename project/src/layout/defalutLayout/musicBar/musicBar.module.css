@@ -1,0 +1,67 @@
+.musicBar {
+  position: absolute;
+  bottom: 0;
+  height: var(--musicBarHeight);
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 1024px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  /* background-color: var(--musicBarBackgroundColor); */
+  z-index: 9999;
+  left: 0;
+}
+
+.white {
+  --iconColor: #fff;
+}
+
+.musicInfo {
+  height: 100%;
+  flex: 1;
+  /* background-color: #fff; */
+  overflow: hidden;
+}
+
+.play {
+  height: 100%;
+  flex: 0 0 580px;
+  width: 580px;
+  display: flex;
+  margin: 0 40px;
+}
+
+.other {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icon {
+  margin: 0 10px;
+  font-size: var(--iconSize);
+  color: var(--iconColor);
+}
+
+.volume {
+  position: relative;
+}
+
+.volumeControl {
+  display: none;
+  position: absolute;
+  top: -105px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+}
+.volume:hover .volumeControl {
+  display: block;
+}
+.volume:active .volumeControl {
+  display: block;
+}

@@ -1,0 +1,47 @@
+.cardWrap {
+  display: flex;
+
+  justify-content: flex-start;
+  /* padding: 10px; */
+}
+
+.left {
+  flex: 0 0 180px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.left .leftImg {
+  width: 175px;
+  height: 175px;
+  border-radius: 5px;
+}
+
+.right {
+  flex: 1 1 auto;
+}
+
+.right .seeMore {
+  font-size: 14px;
+  color: rgb(57, 57, 57);
+  margin-top: 10px;
+  line-height: 40px;
+}
+
+.top1 {
+  font-weight: bold;
+  color: #ec6741;
+}
+
+.top2 {
+  font-weight: bold;
+  color: #ec6741;
+}
+.top3 {
+  font-weight: bold;
+  color: #ef6941;
+}

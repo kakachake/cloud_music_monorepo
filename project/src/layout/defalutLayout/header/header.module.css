@@ -1,0 +1,126 @@
+.dragWrap {
+  -webkit-app-region: drag;
+}
+.header {
+  width: 100%;
+  background-color: var(--backgroundColor);
+  height: var(--headerHeight);
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  /* -webkit-app-region: no-drag; */
+}
+
+.logoWraper {
+  width: 176px;
+  height: 64px;
+  background-position: 0 0;
+}
+
+.left {
+  position: absolute;
+  left: 200px;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+  transition: all 0.3s;
+  -webkit-app-region: no-drag;
+}
+
+.left.leftOpenStyle {
+  color: black;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 50px;
+  -webkit-app-region: no-drag;
+}
+
+.navBtn {
+  display: flex;
+  align-items: center;
+  height: 24px;
+}
+
+.iconWrap {
+  width: 25px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 25px;
+  height: 25px;
+
+  background-color: rgb(0, 0, 0, 0.05);
+  border-radius: 50%;
+  vertical-align: baseline;
+  margin-left: 10px;
+}
+.iconWrap:hover {
+  background-color: rgb(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-app-region: no-drag;
+}
+
+.icon {
+  font-size: 48px;
+}
+
+.icon > svg {
+  width: 4em;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+  -webkit-app-region: no-drag;
+}
+
+.loginItem {
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--color);
+}
+
+.loginItem .avatar {
+  height: 100%;
+
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  /* margin-right: 10px; */
+}
+
+.eletronControlIcon {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+.eletronControlIconItem {
+  color: var(--color);
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}

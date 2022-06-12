@@ -1,0 +1,59 @@
+.volumeControl {
+  height: 100px;
+  width: 30px;
+  box-shadow: 0px 0px 1.1px rgba(0, 0, 0, 0.028), 0px 0px 3.6px rgba(0, 0, 0, 0.042),
+    0px 0px 16px rgba(0, 0, 0, 0.07);
+  position: relative;
+  background: #fff;
+
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.volumeControl::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  /* border-radius: 3px; */
+  width: 0;
+  height: 0;
+  /* z-index: -1; */
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+
+.progress {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progressBar {
+  height: 100%;
+  width: 3px;
+  background-color: #e5e5e5;
+  position: relative;
+}
+
+.curBar {
+  width: 100%;
+  background-color: #ee5959;
+  position: absolute;
+  bottom: 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  background: #ee5959;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}

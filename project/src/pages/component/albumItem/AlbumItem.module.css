@@ -1,0 +1,72 @@
+.albumItemWrap {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.tableHandle > * {
+  padding: 0 5px;
+
+  line-height: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+.tableHandle {
+}
+
+.headerHandle {
+  height: 50px;
+  line-height: 50px;
+}
+
+.left {
+  width: 150px;
+  height: 150px;
+  flex: 0 0 150px;
+  margin-right: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+}
+
+.right {
+  flex: 1;
+}
+
+.rightTop {
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+}
+
+.rightTopTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.handleIcon {
+  margin-left: 20px;
+}
+
+.handleIcon > * {
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.footer {
+  text-align: right;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #999;
+  cursor: pointer;
+}
+.footer:hover {
+  color: #000;
+}

@@ -1,0 +1,98 @@
+.songSheetsWrap {
+}
+
+.headerWrap {
+  display: flex;
+
+  height: 190px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.leftImg {
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 2;
+  margin-right: 10px;
+}
+
+.leftImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.right {
+  z-index: 2;
+
+  flex-direction: column;
+}
+
+.right .tag {
+  display: inline-block;
+  font-size: 14px;
+  color: #e7aa5a;
+  line-height: 20px;
+  height: 20px;
+  border: 1px solid #e7aa5a;
+  border-radius: 50px;
+  padding: 5px 15px;
+  margin: 10px 10px 10px 0;
+  user-select: none;
+}
+
+.right .title {
+  color: #fff;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.right .copywriter {
+  color: #b8ae9d;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.category {
+  height: 50px;
+}
+
+.hotCategories {
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+
+.tabBarItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 12px !important;
+  cursor: pointer;
+  padding: 0px 5px;
+  color: #373737;
+}
+
+.tabBarItemActive {
+  font-size: 12px;
+
+  background-color: #fdf5f5;
+  color: #ec4141;
+  height: 20px;
+}
+.tabBarItemActive:after {
+  content: none !important;
+}
+
+.songSheetWrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

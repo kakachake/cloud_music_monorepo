@@ -1,0 +1,14 @@
+.suggest {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.suggestContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}

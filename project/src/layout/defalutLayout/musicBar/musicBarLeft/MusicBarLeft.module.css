@@ -1,0 +1,114 @@
+.musicBarLeft {
+  width: 100%;
+  -webkit-user-select: none;
+  user-select: none;
+  height: var(--musicBarHeight);
+  transition: all 0.3s;
+}
+
+.musicInfo {
+  height: var(--musicBarHeight);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+
+.musicInfo .musicPic {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-right: 10px;
+  flex: 0 0 auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.musicInfo .musicPic:hover .musicPicHover {
+  opacity: 1;
+}
+
+.musicInfo .musicPic .musicPicHover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: 50px;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.musicInfo .musicPic img {
+  width: 50px;
+  height: 50px;
+  /* 防止图片变形 */
+  object-fit: cover;
+}
+
+.musicDetailCut {
+  height: var(--musicBarHeight);
+}
+
+.songInfo .songInfoNameWrap {
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.songInfo .songInfoName {
+  margin-right: 5px;
+}
+
+.songInfo .songInfoHandle {
+  flex: 0 0 auto;
+}
+
+.songInfo .songInfoAr {
+  font-size: 14px;
+  line-height: 20px;
+}
+.musicDetailCut {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.musicBarLeft .upBtn {
+  font-size: 22px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 5px;
+  color: var(--iconColor);
+}
+.musicBarLeft .upBtn:hover {
+  background-color: rgba(245, 245, 245, 0.305);
+}
+
+.musicBarLeft .musicDetailCutIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.musicDetailCutIconItem {
+  padding: 8px;
+  margin: 0 5px;
+  border: 1px solid rgba(148, 148, 148, 0.444);
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--iconColor);
+}
+
+.musicDetailCutIconItem:hover {
+  background-color: rgba(245, 245, 245, 0.157);
+}

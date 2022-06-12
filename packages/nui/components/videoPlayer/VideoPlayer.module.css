@@ -1,0 +1,156 @@
+.videoWrapper {
+  position: relative;
+  background-color: black;
+  user-select: none;
+}
+
+.videoWrapper:hover .videoControl {
+  opacity: 1;
+}
+
+.videoWrapper .video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.videoWrapper .video video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.videoControl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.5s;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.971) 100%);
+}
+
+.controlTop {
+  height: 20px;
+}
+
+.controlBottom {
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controlBottom .left {
+  display: flex;
+  align-items: center;
+}
+.controlBottom .right {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin: 0 10px 0 0;
+  font-size: 24px;
+}
+.icon:hover {
+  color: #ee5959;
+}
+
+.playIcon {
+  padding: 5px;
+  background: rgba(148, 148, 148, 0.325);
+  border-radius: 50%;
+}
+
+.fullscreen {
+  font-size: 20px;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.fullscreen:hover {
+  animation: iconHover 0.3s ease-in-out;
+}
+
+@keyframes iconHover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.layerIcon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 80px;
+  pointer-events: none;
+}
+
+.volume {
+  display: flex;
+  flex-direction: row;
+}
+.volumeBar {
+  width: 100px;
+}
+
+.right > div {
+  margin-right: 15px;
+}
+
+.selectBr {
+  position: relative;
+  padding: 0 5px;
+}
+
+.selectBr:hover .selectList {
+  display: flex;
+}
+
+.selectList {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  flex-direction: column;
+  right: 0;
+  z-index: 10;
+}
+
+.selectItem {
+  background-color: rgba(2, 2, 2, 0.539);
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.selectItem:hover {
+  color: #ee5959;
+}
+
+.selectItem.activeBr {
+  color: #ee5959;
+  font-weight: bold;
+}

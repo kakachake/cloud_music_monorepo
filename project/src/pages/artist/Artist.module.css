@@ -1,0 +1,28 @@
+.artistWrap {
+  padding: var(--defaultPadding);
+}
+
+.content {
+  margin-top: 10px;
+}
+
+.descItem {
+  margin-bottom: 20px;
+}
+
+.desc {
+  text-indent: 2em;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+}
+
+.descItemTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tabContentWrap {
+  margin-top: 15px;
+}

@@ -1,0 +1,71 @@
+.progress {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.progress .progressBar {
+  background-color: #e5e5e5;
+  width: 100%;
+  position: relative;
+  border-radius: 2px;
+}
+
+.progress:hover .progressBar {
+  height: 5px;
+}
+
+.progress:active .progressBar {
+  height: 5px;
+}
+
+.progress:hover .progressBar {
+  height: 5px;
+}
+
+.progress:hover .dot {
+  visibility: visible;
+  opacity: 1;
+}
+
+.curBar {
+  width: 0px;
+  background-color: #ee5959;
+  height: 100%;
+  position: absolute;
+  border-radius: 2px;
+  z-index: 100;
+}
+
+.bufferBar {
+  width: 0px;
+  background-color: #cdcdcd;
+  height: 100%;
+  position: absolute;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.dot {
+  visibility: hidden;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 0;
+  background: #ee5959;
+  top: 50%;
+  opacity: 0;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.dot:active {
+  visibility: visible;
+}
+
+.dot:hover {
+  width: 15px;
+  height: 15px;
+}

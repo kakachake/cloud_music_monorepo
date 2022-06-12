@@ -1,0 +1,139 @@
+.playListHeader {
+  min-height: 220px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.listDescribe > * {
+  margin-bottom: 10px;
+}
+
+.listImage {
+  flex: 0 0 200px;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.listDescribe {
+  display: flex;
+  flex-direction: column;
+}
+
+.listImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.listTitle {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.listName {
+  font-size: 24px;
+  line-height: 30px;
+
+  font-weight: bold;
+}
+
+.listType {
+  flex: 0 0 auto;
+  font-size: 14px;
+  line-height: 24px;
+
+  border: 1px solid #ec4141;
+  padding: 0px 4px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-right: 10px;
+  color: #ec4141;
+}
+
+.creator {
+  font-size: 14px;
+  line-height: 28px;
+  height: 28px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+}
+
+.albumCreator {
+  font-size: 12px;
+  line-height: 28px;
+  height: 28px;
+  font-weight: bold;
+}
+
+.albumCreator .creatorName {
+  line-height: 28px;
+  font-size: 12px;
+  color: #0b58b0;
+}
+
+.creator > * {
+  margin-right: 5px;
+}
+
+.creator img {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  border: 1px solid #ec4141;
+  box-sizing: border-box;
+}
+
+.creator .creatorName {
+  line-height: 28px;
+  font-size: 12px;
+  color: #0b58b0;
+}
+
+.creator .createTime {
+  line-height: 28px;
+  font-size: 12px;
+}
+
+.handle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.handle > * {
+  margin-right: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+  line-height: 20px;
+  height: 20px;
+}
+
+.tags .tag {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.otherDesc .otherDescItem {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.otherDesc .otherDescItem > * {
+  margin-right: 8px;
+}

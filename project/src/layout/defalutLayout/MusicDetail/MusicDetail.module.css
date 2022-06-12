@@ -1,0 +1,147 @@
+.musicDetail {
+  top: 0;
+  /* overflow-y: auto; */
+  background-color: #fff;
+}
+
+.content {
+  margin-top: var(--headerHeight);
+  height: calc(100% - var(--headerHeight));
+  overflow-y: auto;
+}
+
+.musicDetailHeader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: var(--headerHeight);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  z-index: 30;
+  /* overflow: hidden; */
+}
+
+.musicDetailHeader .headerBg {
+}
+.musicDetailCutIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upBtn {
+  position: absolute;
+  left: 20px;
+  font-size: 22px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.leftBar {
+  position: absolute;
+  right: 20px;
+  font-size: 18px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.leftBarIcon {
+  font-size: 22px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.musicDetailCutIcons .headerSongInfo {
+  max-width: 500px;
+  opacity: 0;
+  text-align: center;
+  transition: all 0.5s;
+  transform: translate3d(0, 100%, 0);
+}
+.musicDetailCutIcons .headerSongInfo .songName {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.musicDetailCutIcons .headerSongInfo .ar {
+  font-size: 14px;
+  font-weight: 300;
+  color: #878883;
+}
+
+.musicDetailCutIcons .headerSongInfoShow {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.songInfoArea {
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: 0 10%;
+  justify-content: space-around;
+}
+.songPicWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.lrc {
+  margin-top: 80px;
+  width: 500px;
+}
+
+.songBaseInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.songBaseInfo .songName {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.songBaseInfo .ar {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(187, 187, 187);
+}
+
+.comment {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(23deg);
+  }
+  100% {
+    transform: rotate(27deg);
+  }
+}
+
+.commentTitle {
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+}

@@ -1,0 +1,16 @@
+.tableHandle > * {
+  padding: 0 5px;
+
+  line-height: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+.tableHandle {
+  height: 40px;
+  line-height: 40px;
+}
+
+.headerHandle {
+  height: 50px;
+  line-height: 50px;
+}

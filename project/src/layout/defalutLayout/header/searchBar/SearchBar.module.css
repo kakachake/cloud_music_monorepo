@@ -1,0 +1,184 @@
+.navSearch {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  background-color: rgb(0, 0, 0, 0.05);
+  border-radius: 20px;
+  width: 150px;
+  color: #fff;
+  margin-left: 10px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+.navSearch input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+}
+
+.navSearch input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  font-size: 14px;
+}
+
+.navSearch {
+  margin-right: 5px;
+}
+
+.navSearch .searchIcon:hover {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.searchInfoTipWrap {
+  position: absolute;
+  top: calc(var(--headerHeight) - 15px);
+  background-color: rgb(255, 255, 255);
+  left: 10%;
+  display: block;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 3.6px rgba(0, 0, 0, 0.042), 0px 0px 10px rgba(0, 0, 0, 0.06),
+    0px 0px 24.1px rgba(0, 0, 0, 0.078), 0px 0px 80px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  min-width: 350px;
+  color: #000;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.hotSearchTitle,
+.historyTitle {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.hotSearchItem {
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hotSearchItem:hover {
+  background-color: #f2f2f2;
+}
+
+.hotItemInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hotItemKeyWord {
+  height: 30px;
+  line-height: 30px;
+}
+.hotItemContent,
+.suggestItem {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #747474;
+}
+
+.hotItemIndex {
+  color: #c2c2c2;
+  width: 40px;
+  flex: 0 0 40px;
+  text-align: center;
+}
+
+.hotItemIndex0 {
+  color: #ff3a8a;
+  font-weight: bold;
+  width: 40px;
+  text-align: center;
+}
+
+.hotItemIndex1 {
+  color: #ff3a3a;
+  font-weight: bold;
+  width: 40px;
+  text-align: center;
+}
+
+.hotItemIndex2 {
+  color: #fd813e;
+  font-weight: bold;
+  width: 40px;
+  text-align: center;
+}
+
+.hotItemSearchWord {
+  color: #000;
+  width: 200px;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.hotSearchBold {
+  font-weight: bold;
+}
+
+.hotItemScore {
+  color: #c2c2c2;
+  width: 100px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.historyItem {
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  padding: 0 5px;
+  border-radius: 20px;
+  border: 1px solid #c2c2c2;
+  display: inline-block;
+  cursor: pointer;
+  margin: 5px 5px;
+  background-color: #fff;
+  color: #666666;
+}
+
+.historyItem:hover {
+  background-color: #f2f2f2;
+}
+
+.suggestType {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #9f9f9f;
+  cursor: default;
+}
+
+.suggestType:hover {
+  color: #000;
+}
+.suggestItem {
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  color: #000;
+  padding: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.suggestItem:hover {
+  background-color: #f2f2f2;
+}

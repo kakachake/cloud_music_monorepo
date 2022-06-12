@@ -1,0 +1,68 @@
+.content {
+  .header {
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    .left {
+      position: relative;
+      .category {
+        position: absolute;
+        width: 750px;
+        top: 100%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.101);
+        padding: 10px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        max-height: 400px;
+        overflow: auto;
+        z-index: 100;
+        background-color: #fff;
+        .cateItem {
+          display: inline-block;
+          min-width: 5em;
+          padding: 8px 10px;
+          cursor: pointer;
+          text-align: center;
+          border-radius: 20px;
+          margin: 10px 10px;
+          &:hover {
+            color: #ec4141;
+          }
+          &.active {
+            color: #ec4141;
+            border-radius: 20px;
+            background-color: #fcebeb;
+          }
+        }
+      }
+    }
+  }
+  .ListWrap {
+    display: grid;
+    grid-gap: 5px 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+.tabBarItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 12px !important;
+  cursor: pointer;
+  padding: 0px 10px;
+  color: #373737;
+  margin: 0 5px;
+}
+
+.tabBarItemActive {
+  font-size: 12px;
+
+  background-color: #fdf5f5;
+  color: #ec4141;
+  height: 20px;
+}
+.tabBarItemActive:after {
+  content: none !important;
+}

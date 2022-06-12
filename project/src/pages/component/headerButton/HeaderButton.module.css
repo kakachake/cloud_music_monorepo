@@ -1,0 +1,41 @@
+.headerButton {
+  height: 30px;
+  border: 1px solid #dddddd;
+  display: inline-block;
+  line-height: 30px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px 10px;
+  cursor: pointer;
+  font-size: 0;
+  transition: all 0.3s;
+  user-select: none;
+}
+.headerButton:hover {
+}
+.headerButton > * {
+  display: inline-block;
+}
+.headerButton .icon {
+  font-size: 16px;
+}
+.headerButton .icon + .content {
+  margin-left: 5px;
+}
+.headerButton .content {
+  font-size: 14px;
+}
+
+.border-left {
+  border-radius: 20px 0 0 20px;
+}
+
+.border-right {
+  border-radius: 0 20px 20px 0;
+}
+
+.border-both {
+  border-radius: 20px;
+}
