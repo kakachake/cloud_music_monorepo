@@ -1,0 +1,98 @@
+.commentItem {
+  margin: 15px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.commentItem .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  overflow: hidden;
+  flex: 0 0 40px;
+}
+
+.commentItem .avatar img {
+  width: 100%;
+}
+
+.content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 50px;
+  justify-content: space-between;
+}
+
+.commentContent {
+  line-height: 20px;
+}
+
+.userName,
+.commentDesc {
+  font-size: 12px;
+  color: #333;
+  display: inline;
+}
+
+.userName {
+  color: var(--linkColor);
+  cursor: pointer;
+}
+
+.userName:hover {
+  color: var(--linkHoverColor);
+}
+
+.footer {
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .star {
+    cursor: pointer;
+    &.liked {
+      color: #ff3a3a;
+    }
+  }
+}
+
+.footer .time {
+  color: #999999;
+}
+
+.commentReplied {
+  margin: 10px;
+  padding: 10px;
+  background-color: #f5f5f4;
+  border-radius: 10px;
+}
+
+.commentReplied > * {
+  display: inline;
+}
+
+.repliedAvatar {
+  margin-right: 5px;
+}
+
+.repliedAvatar,
+.repliedNickName,
+.repliedContent {
+  display: inline;
+
+  line-height: 24px;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+.repliedAvatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline;
+}

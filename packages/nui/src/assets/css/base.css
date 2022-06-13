@@ -1,0 +1,100 @@
+:root {
+  --color: #fff;
+  --backgroundColor: #ec4141;
+  --iconColor: #333333;
+  --iconSize: 24px;
+  --minWidth: 1024px;
+  --musicBarHeight: 70px;
+  --headerHeight: 64px;
+  --musicBarBackgroundColor: #fff;
+  --sideBarWidth: 200px;
+  --defaultPadding: 20px 30px;
+  --linkColor: #618ab7;
+  --linkHoverColor: #0b58b0;
+  --backgroundHoverColor: #d73535;
+}
+
+.link {
+  color: var(--linkColor);
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--linkHoverColor);
+}
+.dark {
+  --color: #000;
+}
+
+.line2 {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.line1 {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.baseContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.defaultClickIcon {
+  color: #666666;
+  line-height: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+.defaultClickIcon:hover {
+  color: #000;
+}
+.liked {
+  color: var(--backgroundColor);
+}
+.liked:hover {
+  color: var(--backgroundHoverColor);
+}
+
+.container1000 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.sheetWrap {
+  margin-top: 10px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+}
+
+.fullScreen:fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgb(255, 255, 255);
+}
+
+.combineBtn {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 10px 0;
+}
