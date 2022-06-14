@@ -77,6 +77,7 @@ importers:
       '@rollup/plugin-babel': ^5.3.1
       '@rollup/plugin-commonjs': ^22.0.0
       '@rollup/plugin-image': ^2.1.1
+      '@rollup/plugin-json': ^4.1.0
       '@rollup/plugin-node-resolve': ^13.3.0
       '@types/node': ^17.0.42
       '@types/react-transition-group': ^4.4.4
@@ -90,6 +91,7 @@ importers:
       rollup-plugin-babel: ^4.4.0
       rollup-plugin-commonjs: ^10.1.0
       rollup-plugin-postcss: ^4.0.2
+      rollup-plugin-styles: ^4.0.0
       rollup-plugin-terser: ^7.0.2
       rollup-plugin-typescript2: ^0.32.1
       styled-components: ^5.3.5
@@ -113,6 +115,7 @@ importers:
       '@rollup/plugin-babel': registry.npmmirror.com/@rollup/plugin-babel/5.3.1_zlefvkjd3mp2eij3mw2gs4aqfm
       '@rollup/plugin-commonjs': registry.npmmirror.com/@rollup/plugin-commonjs/22.0.0_rollup@2.75.6
       '@rollup/plugin-image': registry.npmmirror.com/@rollup/plugin-image/2.1.1_rollup@2.75.6
+      '@rollup/plugin-json': registry.npmmirror.com/@rollup/plugin-json/4.1.0_rollup@2.75.6
       '@rollup/plugin-node-resolve': registry.npmmirror.com/@rollup/plugin-node-resolve/13.3.0_rollup@2.75.6
       '@types/react-transition-group': registry.npmmirror.com/@types/react-transition-group/4.4.4
       postcss: registry.npmmirror.com/postcss/8.4.14
@@ -120,6 +123,7 @@ importers:
       rollup-plugin-babel: registry.npmmirror.com/rollup-plugin-babel/4.4.0_zlefvkjd3mp2eij3mw2gs4aqfm
       rollup-plugin-commonjs: registry.npmmirror.com/rollup-plugin-commonjs/10.1.0_rollup@2.75.6
       rollup-plugin-postcss: registry.npmmirror.com/rollup-plugin-postcss/4.0.2_postcss@8.4.14
+      rollup-plugin-styles: registry.npmmirror.com/rollup-plugin-styles/4.0.0_rollup@2.75.6
       rollup-plugin-terser: registry.npmmirror.com/rollup-plugin-terser/7.0.2_rollup@2.75.6
       rollup-plugin-typescript2: registry.npmmirror.com/rollup-plugin-typescript2/0.32.1_fgms252lqu3rk7srzpqqayl4ya
       tslib: registry.npmmirror.com/tslib/2.4.0
@@ -200,7 +204,7 @@ importers:
       webpack-bundle-analyzer: ^4.5.0
     dependencies:
       '@ant-design/icons': registry.npmmirror.com/@ant-design/icons/4.7.0_ef5jwxihqo6n7gxfmzogljlgcm
-      '@cloud_music/nui': link:../packages/nui_es
+      '@cloud_music/nui': link:../packages/nui
       '@craco/craco': registry.npmmirror.com/@craco/craco/6.4.3_kzyqh2ypgkpa442y24s7zcfbta
       '@reduxjs/toolkit': registry.npmmirror.com/@reduxjs/toolkit/1.8.2_ctm756ikdwcjcvyfxxwskzbr6q
       '@testing-library/jest-dom': registry.npmmirror.com/@testing-library/jest-dom/5.16.4
@@ -5338,6 +5342,18 @@ packages:
       rollup: registry.npmmirror.com/rollup/2.75.6
     dev: true
 
+  registry.npmmirror.com/@rollup/plugin-json/4.1.0_rollup@2.75.6:
+    resolution: {integrity: sha512-yfLbTdNS6amI/2OpmbiBoW12vngr5NW2jCJVZSBEz+H5KfUJZ2M7sDjk0U6GOOdCWFVScShte29o9NezJ53TPw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@rollup/plugin-json/-/plugin-json-4.1.0.tgz}
+    id: registry.npmmirror.com/@rollup/plugin-json/4.1.0
+    name: '@rollup/plugin-json'
+    version: 4.1.0
+    peerDependencies:
+      rollup: ^1.20.0 || ^2.0.0
+    dependencies:
+      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/3.1.0_rollup@2.75.6
+      rollup: registry.npmmirror.com/rollup/2.75.6
+    dev: true
+
   registry.npmmirror.com/@rollup/plugin-node-resolve/11.2.1_rollup@2.75.6:
     resolution: {integrity: sha512-yc2n43jcqVyGE2sqV5/YCmocy9ArjVAP/BeXyTtADTBBX6V0e5UMqwO8CdQ0kzjb6zu5P1qMzsScCMRvE9OlVg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@rollup/plugin-node-resolve/-/plugin-node-resolve-11.2.1.tgz}
     id: registry.npmmirror.com/@rollup/plugin-node-resolve/11.2.1
@@ -5825,6 +5841,18 @@ packages:
     dependencies:
       '@types/node': registry.npmmirror.com/@types/node/17.0.42
     dev: false
+
+  registry.npmmirror.com/@types/cssnano/5.1.0_postcss@8.4.14:
+    resolution: {integrity: sha512-ikR+18UpFGgvaWSur4og6SJYF/6QEYHXvrIt36dp81p1MG3cAPTYDMBJGeyWa3LCnqEbgNMHKRb+FP0NrXtoWQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/cssnano/-/cssnano-5.1.0.tgz}
+    id: registry.npmmirror.com/@types/cssnano/5.1.0
+    name: '@types/cssnano'
+    version: 5.1.0
+    deprecated: This is a stub types definition. cssnano provides its own type definitions, so you do not need this installed.
+    dependencies:
+      cssnano: registry.npmmirror.com/cssnano/5.1.11_postcss@8.4.14
+    transitivePeerDependencies:
+      - postcss
+    dev: true
 
   registry.npmmirror.com/@types/debug/4.1.7:
     resolution: {integrity: sha512-9AonUzyTjXXhEOa0DnqpzZi6VHlqKMswga9EXjpXnnqxwLtdvPPtlO8evrI5D9S6asFRCQ6v+wpiUKbw+vKqyg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/debug/-/debug-4.1.7.tgz}
@@ -11654,6 +11682,13 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       to-regex-range: registry.npmmirror.com/to-regex-range/5.0.1
+
+  registry.npmmirror.com/filter-obj/1.1.0:
+    resolution: {integrity: sha512-8rXg1ZnX7xzy2NGDVkBVaAy+lSlPNwad13BtgSlLuxfIslyt5Vg64U7tFcCt4WS1R0hvtnQybT/IyCkGZ3DpXQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/filter-obj/-/filter-obj-1.1.0.tgz}
+    name: filter-obj
+    version: 1.1.0
+    engines: {node: '>=0.10.0'}
+    dev: true
 
   registry.npmmirror.com/finalhandler/1.2.0:
     resolution: {integrity: sha512-5uXcUVftlQMFnWC9qu/svkWv3GTd2PfUhK/3PLkYNAe7FbqJMt3515HaxE6eRL74GdsriiwujiawdaB1BpEISg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/finalhandler/-/finalhandler-1.2.0.tgz}
@@ -17803,6 +17838,18 @@ packages:
     engines: {node: '>=0.6'}
     dev: true
 
+  registry.npmmirror.com/query-string/7.1.1:
+    resolution: {integrity: sha512-MplouLRDHBZSG9z7fpuAAcI7aAYjDLhtsiVZsevsfaHWDS2IDdORKbSd1kWUA+V4zyva/HZoSfpwnYMMQDhb0w==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/query-string/-/query-string-7.1.1.tgz}
+    name: query-string
+    version: 7.1.1
+    engines: {node: '>=6'}
+    dependencies:
+      decode-uri-component: registry.npmmirror.com/decode-uri-component/0.2.0
+      filter-obj: registry.npmmirror.com/filter-obj/1.1.0
+      split-on-first: registry.npmmirror.com/split-on-first/1.1.0
+      strict-uri-encode: registry.npmmirror.com/strict-uri-encode/2.0.0
+    dev: true
+
   registry.npmmirror.com/queue-microtask/1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/queue-microtask/-/queue-microtask-1.2.3.tgz}
     name: queue-microtask
@@ -19504,6 +19551,36 @@ packages:
       - ts-node
     dev: true
 
+  registry.npmmirror.com/rollup-plugin-styles/4.0.0_rollup@2.75.6:
+    resolution: {integrity: sha512-A2K2sao84OsTmDxXG83JTCdXWrmgvQkkI38XDat46rdtpGMRm9tSYqeCdlwwGDJF4kKIafhV1mUidqu8MxUGig==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/rollup-plugin-styles/-/rollup-plugin-styles-4.0.0.tgz}
+    id: registry.npmmirror.com/rollup-plugin-styles/4.0.0
+    name: rollup-plugin-styles
+    version: 4.0.0
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    peerDependencies:
+      rollup: ^2.63.0
+    dependencies:
+      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/4.2.1
+      '@types/cssnano': registry.npmmirror.com/@types/cssnano/5.1.0_postcss@8.4.14
+      cosmiconfig: registry.npmmirror.com/cosmiconfig/7.0.1
+      cssnano: registry.npmmirror.com/cssnano/5.1.11_postcss@8.4.14
+      fs-extra: registry.npmmirror.com/fs-extra/10.1.0
+      icss-utils: registry.npmmirror.com/icss-utils/5.1.0_postcss@8.4.14
+      mime-types: registry.npmmirror.com/mime-types/2.1.35
+      p-queue: registry.npmmirror.com/p-queue/6.6.2
+      postcss: registry.npmmirror.com/postcss/8.4.14
+      postcss-modules-extract-imports: registry.npmmirror.com/postcss-modules-extract-imports/3.0.0_postcss@8.4.14
+      postcss-modules-local-by-default: registry.npmmirror.com/postcss-modules-local-by-default/4.0.0_postcss@8.4.14
+      postcss-modules-scope: registry.npmmirror.com/postcss-modules-scope/3.0.0_postcss@8.4.14
+      postcss-modules-values: registry.npmmirror.com/postcss-modules-values/4.0.0_postcss@8.4.14
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+      query-string: registry.npmmirror.com/query-string/7.1.1
+      resolve: registry.npmmirror.com/resolve/1.22.0
+      rollup: registry.npmmirror.com/rollup/2.75.6
+      source-map-js: registry.npmmirror.com/source-map-js/1.0.2
+      tslib: registry.npmmirror.com/tslib/2.4.0
+    dev: true
+
   registry.npmmirror.com/rollup-plugin-terser/7.0.2:
     resolution: {integrity: sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/rollup-plugin-terser/-/rollup-plugin-terser-7.0.2.tgz}
     name: rollup-plugin-terser
@@ -20215,6 +20292,13 @@ packages:
     version: 0.1.4
     dev: true
 
+  registry.npmmirror.com/split-on-first/1.1.0:
+    resolution: {integrity: sha512-43ZssAJaMusuKWL8sKUBQXHWOpq8d6CfN/u1p4gUzfJkM05C8rxTmYrkIPTXapZpORA6LkkzcUulJ8FqA7Uudw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/split-on-first/-/split-on-first-1.1.0.tgz}
+    name: split-on-first
+    version: 1.1.0
+    engines: {node: '>=6'}
+    dev: true
+
   registry.npmmirror.com/split2/3.2.2:
     resolution: {integrity: sha512-9NThjpgZnifTkJpzTZ7Eue85S49QwpNhZTq6GRJwObb6jnLFNGB7Qm73V5HewTROPyxD0C29xqmaI68bQtV+hg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/split2/-/split2-3.2.2.tgz}
     name: split2
@@ -20303,6 +20387,13 @@ packages:
     version: 2.0.1
     engines: {node: '>= 0.8'}
     dev: false
+
+  registry.npmmirror.com/strict-uri-encode/2.0.0:
+    resolution: {integrity: sha512-QwiXZgpRcKkhTj2Scnn++4PKtWsH0kpzZ62L2R6c/LUVYv7hVnZqcg2+sMuT6R7Jusu1vviK/MFsu6kNJfWlEQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/strict-uri-encode/-/strict-uri-encode-2.0.0.tgz}
+    name: strict-uri-encode
+    version: 2.0.0
+    engines: {node: '>=4'}
+    dev: true
 
   registry.npmmirror.com/string-argv/0.3.1:
     resolution: {integrity: sha512-a1uQGz7IyVy9YwhqjZIZu1c8JO8dNIe20xBmSS6qu9kv++k3JGzCVmprbNN5Kn+BgzD5E7YYwg1CcjuJMRNsvg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/string-argv/-/string-argv-0.3.1.tgz}

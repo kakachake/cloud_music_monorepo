@@ -2,8 +2,7 @@ import { FC } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { LazyImg } from '@cloud_music/nui'
 import Toast from '../../../components/Toast'
-import { publicSlice } from '../../../redux/publicSlice/slice'
-import store from '../../../redux/store'
+
 import style from './ArtistItem.module.css'
 interface ArtistItemProps {
   pic: string

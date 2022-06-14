@@ -1,4 +1,3 @@
-import { StepBackwardOutlined } from '@ant-design/icons'
 import React from 'react'
 import style from './MusicControl.module.css'
 import { createFromIconfontCN } from '@ant-design/icons'
@@ -6,13 +5,9 @@ import { parseSecondToTime } from '../../utils'
 import { connect } from 'react-redux'
 import store, { RootState } from '../../redux/store'
 import { changeMusic } from '../../controller/musicControl'
-import {
-  getSongInfoAndSet,
-  musicControlSlice,
-  MusicControlState
-} from '../../redux/musicControl/slice'
+import { musicControlSlice, MusicControlState } from '../../redux/musicControl/slice'
 import audioInstance from '../../controller/musicPlayer'
-import { musicListSlice, MusicListState } from '../../redux/musicList/slice'
+import { MusicListState } from '../../redux/musicList/slice'
 import { ProgressBar } from '@cloud_music/nui'
 
 const IconFont = createFromIconfontCN({
