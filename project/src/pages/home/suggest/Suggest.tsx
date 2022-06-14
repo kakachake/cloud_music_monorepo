@@ -1,9 +1,8 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 import { Swiper, SwiperItem } from '@cloud_music/nui'
 import { addMusic } from '../../../controller/musicControl'
-import store from '../../../redux/store'
+
 import { getBanner } from '../../../service/api/home'
-import { getPersonalizedSongSheets } from '../../../service/api/music'
 import { getDailyRecommend } from '../../../service/api/reqLoginApi/songSheets'
 import { SongSheetsType } from '../../../service/api/type'
 import LinkTab from '../../component/linkTab/LinkTab'

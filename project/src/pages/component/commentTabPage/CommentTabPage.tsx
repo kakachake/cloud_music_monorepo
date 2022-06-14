@@ -36,7 +36,7 @@ const CommentTabPage: FC<CommentTabPageProps> = (props) => {
       <Comment onLike={handleLike} commentList={comments} />
       <div className={style.pagination}>
         <Pagination
-          onChangeCurrentPage={(cur) => {
+          onChangeCurrentPage={(cur: number) => {
             setCurPage(cur)
             onPageChange && onPageChange(cur)
           }}

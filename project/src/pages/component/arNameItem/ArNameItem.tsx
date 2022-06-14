@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Toast } from '@cloud_music/nui'
+import Toast from '../../../components/Toast'
 import { publicSlice } from '../../../redux/publicSlice/slice'
 import store from '../../../redux/store'
 import style from './ArNameItem.module.css'

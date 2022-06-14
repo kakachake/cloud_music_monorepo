@@ -1,0 +1,33 @@
+.slide-enter,
+.slide-appear {
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+
+.slide-enter-active,
+.slide-appear-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s;
+}
+
+.slide-enter-done {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.slide-exit {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.slide-exit-active {
+  opacity: 0;
+  transform: translate3d(0, -100%, 0);
+  transition: all 0.2s;
+}
+
+.slide-exit-done {
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}

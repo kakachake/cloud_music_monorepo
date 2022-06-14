@@ -1,7 +1,7 @@
 import AxRequest from './request/index'
 import { BASE_URL } from './request/config'
 import store from '../redux/store'
-import { Toast } from '@cloud_music/nui'
+import Toast from '../components/Toast'
 
 const axRequest = new AxRequest({
   baseURL: BASE_URL,

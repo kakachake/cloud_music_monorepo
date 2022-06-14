@@ -1,7 +1,7 @@
 import { CaretDownOutlined, CaretUpOutlined } from '@ant-design/icons'
 import { FC, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { Toast } from '@cloud_music/nui'
+import Toast from '../../../components/Toast'
 import { VideoPlayer } from '@cloud_music/nui'
 import { useMVDetail } from '../../../hooks/useMVDetail'
 

@@ -1,4 +1,4 @@
-import { Toast } from '@cloud_music/nui'
+import Toast from '../components/Toast'
 import { musicControlSlice } from '../redux/musicControl/slice'
 import { Store } from '../redux/store'
 import { changeMusic } from './musicControl'

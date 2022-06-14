@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import MuTable, { TableColumnType } from '../../../components/muTable/MuTable'
-import Pagination from '../../../components/pagination/Pagination'
+import { MuTable, TableColumnType } from '@cloud_music/nui'
+import { Pagination } from '@cloud_music/nui'
 import { UserProfile } from '../../../type/userDetail'
 import style from './UserTabPage.module.css'
 

@@ -1,4 +1,4 @@
-import { Toast } from '@cloud_music/nui'
+import Toast from '../../components/Toast'
 import axRequest from '../index'
 
 export enum MUSIC_API {

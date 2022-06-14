@@ -1,13 +1,12 @@
-import { FunctionComponent, useEffect, useState } from 'react'
+import { useEffect, useState, FC } from 'react'
 import style from './Content.module.css'
 import { SideBar, SideBarItem, SideBarGroup } from '@cloud_music/nui'
-import { BrowserRouter, Navigate, Outlet, Route, Routes, useNavigate } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 
 import PlayList from '../../../components/playList/PlayList'
 import { useSelector } from '../../../redux/hooks'
 import { linkItems, LinkItemTypes } from './config'
 
-import { FC } from 'react'
 import { IconFont } from '../../../assets/css/iconFont'
 import { HeartOutlined } from '@ant-design/icons'
 interface ContentProps {

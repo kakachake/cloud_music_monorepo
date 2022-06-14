@@ -1,7 +1,6 @@
 import { PlayCircleOutlined } from '@ant-design/icons'
 import { FC, useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { CSSTransition } from 'react-transition-group'
 import { LazyImg } from '@cloud_music/nui'
 import { useVideoUrl } from '../../../hooks/useVideoUrl'
 import { MVType } from '../../../type/mv'

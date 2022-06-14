@@ -5,8 +5,10 @@ import store, { RootState } from '../../../redux/store'
 import style from './MusicDetail.module.css'
 
 import { useSelector } from '../../../redux/hooks'
-import { Lyric, Changpian } from '@cloud_music/nui'
+import { Lyric } from '@cloud_music/nui'
 import { parseLrc } from '../../../utils'
+import { Changpian } from '@cloud_music/nui'
+
 import styled from 'styled-components'
 import CommentTabPage from '../../../pages/component/commentTabPage/CommentTabPage'
 import fullScreen from '../fullScreen/index'

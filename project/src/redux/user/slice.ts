@@ -1,5 +1,5 @@
 import { createAsyncThunk, PayloadAction, createSlice } from '@reduxjs/toolkit'
-import { Toast } from '@cloud_music/nui'
+import Toast from '../../components/Toast'
 import { checkLoginStatus, getUserPlayList } from '../../service/api/login'
 import { getLikeList } from '../../service/api/reqLoginApi/songSheets'
 import { filterPlayList } from '../../service/utils'

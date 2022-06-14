@@ -1,6 +1,6 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 import style from './QrCodeLogin.module.css'
-import { Toast } from '@cloud_music/nui'
+import Toast from '../../Toast'
 import {
   getQRCodeKey,
   getQRCodeImage,
