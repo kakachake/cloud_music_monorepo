@@ -6,7 +6,7 @@ import { PlayCircleOutlined } from '@ant-design/icons'
 import { formatNumber } from '../../../utils'
 import { useNavigate } from 'react-router-dom'
 import highSheetImg from '../../../assets/img/highSheet.png'
-import LazyImg from '../../../components/lazyImg/lazyImg'
+import { LazyImg } from '@cloud_music/nui'
 interface HighQualitySongSheetItemProps {
   songSheetInfo: HighQualitySongSheetType
 }

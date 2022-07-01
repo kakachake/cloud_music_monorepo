@@ -158,6 +158,14 @@ body {
 html {
 }
 
+input {
+  background: none;
+  outline: none;
+  border: none;
+}
+input:focus {
+  border: none;
+}
 /*清除浮动*/
 .clearfix:before,
 .clearfix:after {

@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useLayoutEffect } from 'react'
 import { Navigate, Route, useLocation, useRoutes } from 'react-router-dom'
 import { Loading } from '@cloud_music/nui'
 import MVList from '../pages/video/mvList/MVList'
@@ -26,16 +26,15 @@ const Artists = lazy(() => import('../pages/home/artists/Artists'))
 // const VideoDetail = lazy(() => import('../pages/videoDetail/v/VideoDetail'))
 
 function RequireAuth({ children }: { children: JSX.Element }) {
-  const userInfo = useSelector((state: RootState) => state.user.userInfo)
-  const location = useLocation()
+  const route = useLocation().pathname
+  // const userInfo = useSelector((state: RootState) => state.user.userInfo)
+  const cookie = localStorage.getItem('cookie')
 
-  if (!userInfo?.userId) {
-    // Redirect them to the /login page, but save the current location they were
-    // trying to go to when they were redirected. This allows us to send them
-    // along to that page after they login, which is a nicer user experience
-    // than dropping them off on the home page.
-    createLogin.create()
-  }
+  useLayoutEffect(() => {
+    if (!cookie) {
+      createLogin.create()
+    }
+  }, [route])
 
   return children
 }

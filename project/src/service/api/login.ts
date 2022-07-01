@@ -10,7 +10,11 @@ enum LoginAPI {
   //检测登录状态
   CHECK_LOGIN_STATUS = '/login/status',
   //获取用户歌单
-  GET_USER_PLAYLIST = '/user/playlist'
+  GET_USER_PLAYLIST = '/user/playlist',
+  // 发送验证码
+  SEND_VERIFY_CODE = '/captcha/sent',
+  // 手机登录
+  PHONE_LOGIN = '/login/cellphone'
 }
 
 //获取二维码key
@@ -59,6 +63,36 @@ export function getUserPlayList(uid: string) {
     url: LoginAPI.GET_USER_PLAYLIST,
     params: {
       uid
+    }
+  })
+}
+
+//发送验证码
+export function sendVerifyCode(phone: string) {
+  return axRequest.get({
+    url: LoginAPI.SEND_VERIFY_CODE,
+    params: {
+      phone
+    }
+  })
+}
+
+//手机登录
+export function phoneLogin({
+  phone,
+  captcha,
+  password
+}: {
+  phone: string
+  captcha?: string
+  password?: string
+}) {
+  return axRequest.post({
+    url: LoginAPI.PHONE_LOGIN,
+    data: {
+      phone,
+      password,
+      captcha
     }
   })
 }

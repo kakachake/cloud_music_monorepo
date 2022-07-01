@@ -1,12 +1,14 @@
 import { CloseOutlined } from '@ant-design/icons'
-import { FunctionComponent } from 'react'
+import { FC, FunctionComponent, useState } from 'react'
 import style from './Login.module.css'
 import createLogin from '../login/index'
 import QrCodeLogin from './qrCodeLogin/QrCodeLogin'
+import { PhoneLogin } from './phoneLogin/PhoneLogin'
 
 interface LoginProps {}
 
-const Login: FunctionComponent<LoginProps> = () => {
+const Login: FC<LoginProps> = () => {
+  const [loginType, setLoginType] = useState<'qrCode' | 'phone'>('phone')
   const handleClose = () => {
     createLogin.destroy()
   }
@@ -18,12 +20,15 @@ const Login: FunctionComponent<LoginProps> = () => {
             <CloseOutlined />
           </div>
         </div>
-        <div className={style.loginTitle}>
-          <div className={style.qrCodeLogin}>
+        {loginType === 'qrCode' ? (
+          <div>
             <QrCodeLogin handleClose={handleClose} />
           </div>
-        </div>
-        <div></div>
+        ) : (
+          <PhoneLogin handleClose={handleClose} />
+        )}
+
+        {/* <div className=''>手机号登录</div> */}
       </div>
     </div>
   )

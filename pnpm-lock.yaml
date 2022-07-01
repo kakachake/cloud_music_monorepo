@@ -53,21 +53,6 @@ importers:
 
   packages/nui:
     specifiers:
-      '@types/node': ^16.11.39
-      '@types/react': ^18.0.12
-      '@types/react-transition-group': ^4.4.4
-      react: ^18.1.0
-      react-transition-group: ^4.4.2
-    dependencies:
-      '@types/react-transition-group': registry.npmmirror.com/@types/react-transition-group/4.4.4
-      react: registry.npmmirror.com/react/18.1.0
-      react-transition-group: registry.npmmirror.com/react-transition-group/4.4.2_react@18.1.0
-    devDependencies:
-      '@types/node': registry.npmmirror.com/@types/node/16.11.39
-      '@types/react': registry.npmmirror.com/@types/react/18.0.12
-
-  packages/nui_es:
-    specifiers:
       '@ant-design/icons': ^4.7.0
       '@babel/core': ^7.18.5
       '@babel/plugin-transform-runtime': ^7.18.5
@@ -6134,6 +6119,7 @@ packages:
     version: 4.4.4
     dependencies:
       '@types/react': registry.npmmirror.com/@types/react/18.0.12
+    dev: true
 
   registry.npmmirror.com/@types/react/18.0.12:
     resolution: {integrity: sha512-duF1OTASSBQtcigUvhuiTB1Ya3OvSy+xORCiEf20H0P0lzx+/KeVsA99U5UjLXSbyo1DRJDlLKqTeM1ngosqtg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react/-/react-18.0.12.tgz}
@@ -18835,22 +18821,6 @@ packages:
       prop-types: registry.npmmirror.com/prop-types/15.8.1
       react: registry.npmmirror.com/react/18.1.0
       react-dom: registry.npmmirror.com/react-dom/18.1.0_react@18.1.0
-    dev: false
-
-  registry.npmmirror.com/react-transition-group/4.4.2_react@18.1.0:
-    resolution: {integrity: sha512-/RNYfRAMlZwDSr6z4zNKV6xu53/e2BuaBbGhbyYIXTrmgu/bGHzmqOs7mJSJBHy9Ud+ApHx3QjrkKSp1pxvlFg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-transition-group/-/react-transition-group-4.4.2.tgz}
-    id: registry.npmmirror.com/react-transition-group/4.4.2
-    name: react-transition-group
-    version: 4.4.2
-    peerDependencies:
-      react: '>=16.6.0'
-      react-dom: '>=16.6.0'
-    dependencies:
-      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.18.3
-      dom-helpers: registry.npmmirror.com/dom-helpers/5.2.1
-      loose-envify: registry.npmmirror.com/loose-envify/1.4.0
-      prop-types: registry.npmmirror.com/prop-types/15.8.1
-      react: registry.npmmirror.com/react/18.1.0
     dev: false
 
   registry.npmmirror.com/react/18.1.0:

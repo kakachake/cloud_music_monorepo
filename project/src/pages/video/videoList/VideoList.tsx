@@ -1,6 +1,6 @@
 import { RightOutlined } from '@ant-design/icons'
 import { FC, useCallback, useEffect, useMemo, useState } from 'react'
-import { useSelector } from '../../../../out/cloud_music-win32-x64/resources/app/src/redux/hooks'
+
 import { useScrollBottomMore } from '../../../hooks/useScrollBottomMore'
 import { useVideoGroupList } from '../../../hooks/useVideoGroupList'
 import { getVideoAllList, getVideoCategoryVideoList } from '../../../service/api/video'

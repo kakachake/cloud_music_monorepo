@@ -11,7 +11,7 @@ import top50 from '../../assets/img/top50.png'
 import { useArtistAlbums } from '../../hooks/useArtistAlbums'
 import { useArtistDetail } from '../../hooks/useArtistDetail'
 import { n2br, splitN } from '../../utils'
-import Loading from '../../components/loading/Loading'
+import { Loading } from '@cloud_music/nui'
 
 interface ArtistProps {}
 

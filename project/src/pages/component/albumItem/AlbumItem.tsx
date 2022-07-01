@@ -7,7 +7,7 @@ import {
 import { FC, useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Like from '../../../components/like/Like'
-import MuTable, { TableColumnType } from '../../../components/muTable/MuTable'
+import { MuTable, TableColumnType } from '@cloud_music/nui'
 import { addMusic, setMusicList } from '../../../controller/musicControl'
 import { downLoadMusic } from '../../../service/api/music'
 import { SongType } from '../../../type/song'

@@ -7,7 +7,7 @@ import SongImgChangeSwiper from '../component/songImgChangeSwriper/SongImgChange
 import style from './PersonalFm.module.css'
 import { changeMusic, setMusicList } from '../../controller/musicControl'
 import { useSelector } from '../../redux/hooks'
-import Lyric from '../../components/lyric/Lyric'
+import { Lyric } from '@cloud_music/nui'
 import { parseLrc } from '../../utils'
 import store, { RootState } from '../../redux/store'
 import CommentTabPage from '../component/commentTabPage/CommentTabPage'

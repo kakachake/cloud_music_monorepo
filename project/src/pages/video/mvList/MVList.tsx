@@ -1,5 +1,6 @@
 import { FC, useState } from 'react'
 import { useMVFirstList } from '../../../hooks/useMVFirstList'
+import { useMVNeteaseList } from '../../../hooks/useMVNeteaseList'
 import LinkTab from '../../component/linkTab/LinkTab'
 import TabBar from '../../component/tabBar/TabBar'
 import TabBarItem from '../../component/tabBar/TabBarItem'
@@ -10,7 +11,7 @@ interface MVListProps {}
 const MVList: FC<MVListProps> = () => {
   const [typeActive, setTypeActive] = useState('')
   const [mvFirst = [], mvFirstLoading] = useMVFirstList(typeActive)
-  const [mvNetease = [], mvNeteaseLoading] = useMVFirstList(typeActive)
+  const [mvNetease = [], mvNeteaseLoading] = useMVNeteaseList(typeActive)
   const type = ['内地', '港台', '欧美', '日本', '韩国']
   return (
     <div>

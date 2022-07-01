@@ -6,7 +6,7 @@ import PlayListHeader, { PLAY_LIST_TYPE } from '../component/PlayListHeader/Play
 import TabBar from '../component/tabBar/TabBar'
 import TabBarItem from '../component/tabBar/TabBarItem'
 import style from './Album.module.css'
-import MuTable, { TableColumnType } from '../../components/muTable/MuTable'
+import { MuTable, TableColumnType } from '@cloud_music/nui'
 import { useAlbum } from './hooks/useAlbum'
 import { CloudDownloadOutlined, HeartOutlined } from '@ant-design/icons'
 

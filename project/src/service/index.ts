@@ -27,7 +27,7 @@ const axRequest = new AxRequest({
       console.log(error)
       if (!(error.code === 'ERR_CANCELED')) {
         // 取消请求的错误不需要弹窗
-        Toast.error(error.message)
+        // Toast.error(error.message)
       }
       throw error
     }
