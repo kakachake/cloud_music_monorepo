@@ -4,20 +4,8 @@ import { getUserPlayList } from '../service/api/login'
 import { filterPlayList } from '../service/utils'
 
 export const useUserPlayList = (id: string) => {
-  const [ownList, setOwnList] = useState<any[]>([])
-  const [likeList, setLikeList] = useState<any[]>([])
   const [loading, setLoading] = useState(false)
-  useEffect(() => {
-    setLoading(true)
-    getUserPlayList(id)
-      .then((res) => {
-        const { ownList, likeList } = filterPlayList(res.playlist, id)
-        setOwnList(ownList)
-        setLikeList(likeList)
-      })
-      .finally(() => {
-        setLoading(false)
-      })
-  }, [id])
+  const { userPlayList: ownList, userLikeList: likeList } = store.getState().user
+
   return [ownList, likeList, loading] as const
 }

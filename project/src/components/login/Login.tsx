@@ -8,7 +8,7 @@ import { PhoneLogin } from './phoneLogin/PhoneLogin'
 interface LoginProps {}
 
 const Login: FC<LoginProps> = () => {
-  const [loginType, setLoginType] = useState<'qrCode' | 'phone'>('phone')
+  const [loginType, setLoginType] = useState<'qrCode' | 'phone'>('qrCode')
   const handleClose = () => {
     createLogin.destroy()
   }

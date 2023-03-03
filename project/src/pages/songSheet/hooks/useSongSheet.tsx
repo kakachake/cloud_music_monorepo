@@ -10,11 +10,12 @@ export const useSongSheet = (id: string) => {
   const [loading, setLoading] = useState<boolean>(false)
   const [tabList, setTabList] = useState<any[]>([])
 
-  const handleGetPlaylistDetail = async () => {
+  const handleGetPlaylistDetail = async (controller: AbortController) => {
     setLoading(true)
+
     // 取消之前的请求
-    axRequest.removePendingByUrl(MUSIC_API.GET_PLAYLIST_DETAIL)
-    getPlaylistDetail(id!)
+    // axRequest.removePendingByUrl(MUSIC_API.GET_PLAYLIST_DETAIL)
+    getPlaylistDetail(id!, { signal: controller.signal })
       .then((res) => {
         setSongSheetInfo(res.playlist)
         setTabList([
@@ -38,7 +39,13 @@ export const useSongSheet = (id: string) => {
       })
   }
   useEffect(() => {
-    handleGetPlaylistDetail()
+    const controller = new AbortController()
+    handleGetPlaylistDetail(controller)
+    return () => {
+      console.log('移除')
+
+      controller.abort()
+    }
   }, [id])
   return { songSheetInfo, tabList, handleGetPlaylistDetail, loading }
 }

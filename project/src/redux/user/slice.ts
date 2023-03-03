@@ -48,7 +48,16 @@ const initialState: UserState = {
 export const userSlice = createSlice({
   name: 'UserSlice',
   initialState,
-  reducers: {},
+  reducers: {
+    clearUserState: (state) => {
+      state.userInfo = null
+      state.userAccount = null
+      state.userPlayList = []
+      state.userLikeList = []
+      state.likeIdList = []
+      localStorage.removeItem('cookie')
+    }
+  },
   extraReducers: {
     [getUserInfo.fulfilled.type]: (state, action: PayloadAction<any>) => {
       state.userInfo = action.payload.profile
@@ -64,3 +73,5 @@ export const userSlice = createSlice({
     }
   }
 })
+
+export const { clearUserState } = userSlice.actions

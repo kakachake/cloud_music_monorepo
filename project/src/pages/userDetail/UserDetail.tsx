@@ -11,13 +11,13 @@ import UserInfoHeader, { UserInfo } from '../component/userInfoHeader/UserInfoHe
 
 import PlayListProvider from './PlayListProvider'
 import style from './UserDetail.module.css'
+import React from 'react'
 interface UserDetailProps {
   me?: boolean
 }
 
 const UserDetail: FC<UserDetailProps> = ({ me = false }) => {
   const id = me ? store.getState().user?.userInfo?.userId : useParams().id
-  console.log(id)
 
   if (!id) return null
 
@@ -57,15 +57,24 @@ const UserDetail: FC<UserDetailProps> = ({ me = false }) => {
   if (error) return <div>未知用户信息！</div>
 
   function playList(playList: any[]) {
+    console.log(playList)
+
     switch (playListStyle) {
       case 0:
         return (
           <>
-            {playList.map((playListItem) => {
-              return (
-                <PlayListProvider key={playListItem.id} playList={playListItem}></PlayListProvider>
-              )
-            })}
+            {playList.length ? (
+              playList.map((playListItem, _idx) => {
+                return (
+                  <PlayListProvider
+                    key={playListItem.id}
+                    playList={playListItem}
+                  ></PlayListProvider>
+                )
+              })
+            ) : (
+              <Loading />
+            )}
           </>
         )
     }
@@ -98,4 +107,4 @@ const UserDetail: FC<UserDetailProps> = ({ me = false }) => {
   )
 }
 
-export default UserDetail
+export default React.memo(UserDetail)

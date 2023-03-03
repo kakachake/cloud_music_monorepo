@@ -24,7 +24,7 @@ const axRequest = new AxRequest({
       }
     },
     responseErrorInterceptor: (error) => {
-      console.log(error)
+      console.error(error)
       if (!(error.code === 'ERR_CANCELED')) {
         // 取消请求的错误不需要弹窗
         // Toast.error(error.message)

@@ -1,5 +1,6 @@
 import Toast from '../../components/Toast'
 import axRequest from '../index'
+import { AxRequestConfig } from '../request/types'
 
 export enum MUSIC_API {
   //获取推荐歌单，不需登录
@@ -28,12 +29,15 @@ export enum MUSIC_API {
 }
 
 //获取歌单详情
-export function getPlaylistDetail(id: string | number) {
+export function getPlaylistDetail(id: string | number, options: AxRequestConfig) {
+  console.log('getPlaylistDetail')
+
   return axRequest.get({
     url: MUSIC_API.GET_PLAYLIST_DETAIL,
     params: {
       id
-    }
+    },
+    ...options
   })
 }
 

@@ -8,7 +8,7 @@
   "homepage": "./",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
-    "@cloud_music/nui": "workspace:^1.0.0",
+    "@cloud_music/nui": "workspace:*",
     "@craco/craco": "^6.4.3",
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.4",
@@ -42,6 +42,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "preview": "serve build -p 3033",
     "preinstall": "npx only-allow pnpm",
     "dev": "vite",
     "build": "vite build --outDir=build",

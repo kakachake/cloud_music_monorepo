@@ -56,14 +56,13 @@
   text-align: center;
   line-height: 25px;
   height: 25px;
-
-  background-color: rgb(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.05);
   border-radius: 50%;
   vertical-align: baseline;
   margin-left: 10px;
 }
 .iconWrap:hover {
-  background-color: rgb(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
@@ -94,18 +93,31 @@
 }
 
 .loginItem {
+  position: relative;
   cursor: pointer;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
-  color: var(--color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .loginItemLink {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color);
+  }
+  &:hover {
+    .pop {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+      max-height: 100px;
+    }
+  }
 }
 
 .loginItem .avatar {
   height: 100%;
-
   padding: 5px;
   box-sizing: border-box;
   border-radius: 50%;
@@ -123,4 +135,33 @@
   margin: 5px;
   cursor: pointer;
   font-size: 18px;
+}
+
+.pop {
+  transform: translate3d(0, -10%, 0);
+  opacity: 0;
+  max-height: 0;
+  position: absolute;
+  top: 50px;
+  min-width: 80px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+  transition: all 0.3s;
+  .popItem {
+    transition: all 0.3s;
+    height: 30px;
+    padding: 5px 10px;
+    line-height: 30px;
+    text-align: center;
+    color: #000;
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
 }

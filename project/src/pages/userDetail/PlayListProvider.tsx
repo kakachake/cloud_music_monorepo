@@ -29,7 +29,7 @@ const PlayListProvider: FC<PlayListProviderProps> = (props) => {
   return (
     <>
       {
-        <LazyLoad onIntersecting={fetchData}>
+        <LazyLoad onIntersecting={fetchData} key={playList.id}>
           <PlayListPreviewCard
             title={playList?.name}
             songs={playListDetail?.tracks || []}

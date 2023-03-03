@@ -39,8 +39,8 @@ class AxRequest {
       config = config.interceptors.requestInterceptor(config)
     }
     return new Promise((resolve, reject) => {
-      const url = config.url
-      if (url) {
+      const { url, signal } = config
+      if (url && !signal) {
         const controller = new AbortController()
         config.signal = controller.signal
         const requestKey = generateReqKey(config)
